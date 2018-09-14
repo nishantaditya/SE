@@ -1,3 +1,4 @@
+
 # When done, submit this entire file to the autograder.
 
 # Part 1
@@ -58,6 +59,7 @@ end
 # Part 3
 
 class BookInStock
+  attr_accessor :isbn, :price
   def initialize(isbn, price)
     raise ArgumentError if isbn.empty? || price <= 0
     @isbn = isbn
